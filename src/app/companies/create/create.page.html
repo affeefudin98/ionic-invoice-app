@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+    
+    <ion-title>
+      Create Company
+    </ion-title>
+ 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Company Details
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="fixed">Name</ion-label>
+      <ion-input type="text" placeholder="Enter name here"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Email</ion-label>
+      <ion-input type="email" placeholder="Enter email address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Address</ion-label>
+      <ion-input type="text" placeholder="Enter address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Contact</ion-label>
+      <ion-input type="text" placeholder="Enter contact number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="fixed">Website</ion-label>
+      <ion-input type="text" placeholder="Enter website link (If exist)"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Person In-Charge
+      </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="fixed">Name</ion-label>
+      <ion-input type="text" placeholder="Enter PIC name"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-label position="fixed">IC Number</ion-label>
+      <ion-input type="text" placeholder="Enter PIC IC"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  
+  <section>
+    <ion-button expand="block" color="success">Add Company</ion-button>
+  </section>
+</ion-content>
