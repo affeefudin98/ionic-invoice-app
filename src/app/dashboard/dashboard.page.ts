@@ -19,7 +19,19 @@ export class DashboardPage implements OnInit {
   ngOnInit() {
   }
 
-  // companiesCreate() {
-  //   this.router.navigate(['/companies-create']);
-  // }
+   companyCreate() {
+     this.router.navigate(['/tabs/companies-create']);
+   }
+
+   productCreate() {
+    this.router.navigate(['/tabs/create-product']);
+  }
+
+  paymethodCreate() {
+    this.router.navigate(['/tabs/create-paymethod']);
+  }
+
+  invoiceCreate() {
+    this.router.navigate(['/tabs/create-invoice']);
+  }
 }

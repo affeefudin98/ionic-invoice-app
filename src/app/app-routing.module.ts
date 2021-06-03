@@ -51,6 +51,14 @@ const routes: Routes = [
     path: 'index-paymethod',
     loadChildren: () => import('./paymethods/index-paymethod/index-paymethod.module').then( m => m.IndexPaymethodPageModule)
   },
+  {
+    path: 'create-invoice',
+    loadChildren: () => import('./invoices/create-invoice/create-invoice.module').then( m => m.CreateInvoicePageModule)
+  },
+  {
+    path: 'index-invoice',
+    loadChildren: () => import('./invoices/index-invoice/index-invoice.module').then( m => m.IndexInvoicePageModule)
+  },
  
 ];
 @NgModule({

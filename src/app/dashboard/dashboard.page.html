@@ -1,11 +1,11 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>Dashboard</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- <ion-button (click)="companiesCreate()" >Companies</ion-button>
+   <ion-button (click)="companiesCreate()" >Companies</ion-button>
   <ion-button ion-button color="secondary">Products</ion-button>
   <ion-button ion-button color="danger">Paymethods</ion-button>
 
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-  </div> -->
+  </div>
 
   <ion-grid>
     <ion-row>
@@ -45,4 +45,95 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+</ion-content> -->
+
+<ion-header class="ion-no-border">
+
+	<ion-item lines="none">
+
+		<ion-avatar slot="start">
+			<img src="assets/images/cat1.jpg">
+    </ion-avatar>
+			<ion-label>
+				<p>Hello Admin</p>
+			</ion-label>
+
+	</ion-item>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <h2>Statistics</h2>
+
+    <ion-grid>
+      <!-- row 1 -->
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Number of Companies</ion-card-subtitle>
+              <ion-card-title>10</ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+              <ion-button (click)="companyCreate()">
+                <ion-icon slot="start" name="arrow-forward"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+        <ion-col>
+          <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Number of Products</ion-card-subtitle>
+            <ion-card-title>5</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-button (click)="productCreate()">
+              <ion-icon slot="start" name="arrow-forward"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+      <!-- row 2 -->
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-subtitle>Number of Paymethods</ion-card-subtitle>
+              <ion-card-title>10</ion-card-title>
+            </ion-card-header>
+            <ion-card-content class="ion-text-left">
+              <ion-button (click)="paymethodCreate()">
+                <ion-icon slot="start" name="arrow-forward"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+        <ion-col>
+          <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Number of Invoices</ion-card-subtitle>
+            <ion-card-title>5</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-button (click)="invoiceCreate()">
+              <ion-icon slot="start" name="arrow-forward"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
+
 </ion-content>

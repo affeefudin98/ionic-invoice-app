@@ -24,6 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('../paymethods/create-paymethod/create-paymethod.module').then( m => m.CreatePaymethodPageModule)
       },
       {
+        path: 'create-invoice',
+        loadChildren: () => import('../invoices/create-invoice/create-invoice.module').then( m => m.CreateInvoicePageModule)
+      },
+      {
         path: 'tab1',
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
