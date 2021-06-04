@@ -12,33 +12,33 @@ const routes: Routes = [
         loadChildren: () => import('../dashboard/dashboard.module').then( m => m.DashboardPageModule)
       },
        {
-         path: 'companies-create',
-         loadChildren: () => import('../companies/create/create.module').then( m => m.CreatePageModule)
-       },
-       {
-        path: 'create-product',
-        loadChildren: () => import('../products/create-product/create-product.module').then( m => m.CreateProductPageModule)
+        path: 'companies-index',
+        loadChildren: () => import('../companies/index/index.module').then( m => m.IndexPageModule)
       },
       {
-        path: 'create-paymethod',
-        loadChildren: () => import('../paymethods/create-paymethod/create-paymethod.module').then( m => m.CreatePaymethodPageModule)
+        path: 'index-product',
+        loadChildren: () => import('../products/index-product/index-product.module').then( m => m.IndexProductPageModule)
       },
       {
-        path: 'create-invoice',
-        loadChildren: () => import('../invoices/create-invoice/create-invoice.module').then( m => m.CreateInvoicePageModule)
+        path: 'index-paymethod',
+        loadChildren: () => import('../paymethods/index-paymethod/index-paymethod.module').then( m => m.IndexPaymethodPageModule)
       },
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'index-invoice',
+        loadChildren: () => import('../invoices/index-invoice/index-invoice.module').then( m => m.IndexInvoicePageModule)
       },
-      {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
-      },
+      // {
+      //   path: 'tab1',
+      //   loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+      // },
+      // {
+      //   path: 'tab2',
+      //   loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+      // },
+      // {
+      //   path: 'tab3',
+      //   loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+      // },
       {
         path: '',
         redirectTo: '/tabs/dashboard',

@@ -3,7 +3,7 @@
     <ion-card-header>
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-back-button defaultHref="/tabs/dashboard"></ion-back-button>
+          <ion-back-button defaultHref="/tabs/index-invoice"></ion-back-button>
         </ion-buttons>
       <ion-card-title>Create New Invoice</ion-card-title>
       <ion-card-subtitle>Fill in invoice details</ion-card-subtitle>
@@ -19,9 +19,9 @@
       <ion-item>
         <ion-label>Due Date</ion-label>
         <ion-datetime value="2021-01-01" ></ion-datetime>
-      </ion-item>
+      </ion-item><br>
 
-      <ion-item-divider></ion-item-divider>
+      <ion-item-divider>Sender&Receiver</ion-item-divider>
 
       <ion-item>
         <ion-label>From</ion-label>
@@ -58,7 +58,7 @@
 
       <ion-item>
         <ion-label>Tax</ion-label>
-        <ion-select value="0.0">
+        <ion-select value="0.00">
           <ion-select-option value="0.00">0%</ion-select-option>
           <ion-select-option value="0.01">1%</ion-select-option>
           <ion-select-option value="0.1">10%</ion-select-option>
