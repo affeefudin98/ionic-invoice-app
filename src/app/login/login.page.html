@@ -11,23 +11,21 @@
       <ion-card-content>
       
             <form>
-              <div class="wrapform">
-                <ion-item lines="full">
-                  <ion-label position="floating">Email</ion-label>
-                  <ion-input type="email" required></ion-input>
-                </ion-item>
-            
-                <ion-item lines="full">
-                  <ion-label position="floating">Password</ion-label>
-                  <ion-input type="password" required></ion-input>
-                </ion-item>
-              </div>
+              <ion-item lines="full">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" required></ion-input>
+              </ion-item>
+          
+              <ion-item lines="full">
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" required></ion-input>
+              </ion-item>
             
               <div class="password_forgot">
                 <ion-button fill="clear" class="ion-no-padding">ForgotPassword?</ion-button>
               </div>
               <div class="sign-btn-wrap">
-                <ion-button  shape="round" type="submit"  fill="solid" class="sign-btn">Login</ion-button>
+                <ion-button  shape="round" type="submit"  fill="solid" class="sign-btn" (click)="goToDashboard()">Login</ion-button>
               </div>
     
                <div class="text-tag">
@@ -50,7 +48,7 @@
     </ion-card>
 
     <div class="ion-card-footer">
-      <span>Don’t have an account?</span><button class="ion-no-padding" >Sign Up</button>
+      <span>Don’t have an account?</span><button class="ion-no-padding" (click)="registerUser()">Sign Up</button>
     </div>
  
 </ion-content>

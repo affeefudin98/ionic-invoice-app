@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-invoice.page.scss'],
 })
 export class CreateInvoicePage implements OnInit {
-
-  constructor() { }
+  
+  constructor() { 
+  }
 
   ngOnInit() {
   }
